@@ -543,7 +543,7 @@ const Home = () => {
     //     }
     //   `}</style>
 
-    <div className="w-full mx-auto relative">
+    <div className="w-full mx-auto relative top-[60px]">
       <div className="relative">
         <div className="w-full overflow-hidden shadow-lg mb-8 px-0">
           <div
@@ -570,7 +570,7 @@ const Home = () => {
                   </p>
                   <div className="text-left mt-2 md:mt-4 lg:mt-6">
                     <Link
-                      to="/service"
+                      to="/services"
                       className="inline-block py-1 px-2 md:py-2 md:px-6 lg:py-2 lg:px-6 bg-orange-500 text-white text-sm md:text-base lg:text-lg font-semibold rounded-lg transition-colors duration-700"
                       style={{
                         backgroundImage:

@@ -85,10 +85,12 @@ const Navbar = () => {
         <>
           <nav className="h-[60px] w-full bg-black fixed z-1000">
             <div className="leftnav box-border h-[60px] flex justify-center align-center pt-[10px]">
+              <Link to="/">
               <img
                 src={imgamx}
                 className="relative h-[30px] w-[100px]  box-border m-auto"
               />
+              </Link>
               <a
                 href="#"
                 className="mainhead bolder  not-italic text-s flex pt-[8px]"
@@ -102,7 +104,7 @@ const Navbar = () => {
 
             <div className="rightnav ">
               <ul className="rightnav_ul">
-                <li className="">
+                {/* <li className="">
                   <a
                     href="/"
                     className="not-italic font-mono  text-color headsize"
@@ -110,7 +112,7 @@ const Navbar = () => {
                   >
                     Home
                   </a>
-                </li>
+                </li> */}
 
                 <li>
                   <li className="relative">
@@ -1041,10 +1043,12 @@ const Navbar = () => {
         <>
           <nav className="h-[60px] w-full bg-black fixed z-10">
             <div className="leftnav box-border h-[60px] flex justify-center align-center pt-[10px]">
+              <Link to="/" onClick={() => handleClick(null)}>
               <img
                 src={imgamx}
                 className="relative  h-[30px] w-[100px]  box-border m-auto"
               />
+              </Link>
               <a
                 href="#"
                 className="mainhead bolder  not-italic text-s flex pt-[8px]"
@@ -1058,7 +1062,7 @@ const Navbar = () => {
 
             <div className="rightnav ">
               <ul className="rightnav_ul">
-                <li className="">
+                {/* <li className="">
                   <a
                     href="/"
                     className="not-italic font-mono  text-color headsize"
@@ -1066,7 +1070,7 @@ const Navbar = () => {
                   >
                     Home
                   </a>
-                </li>
+                </li> */}
 
                 <li>
                   <li className="relative">
@@ -2200,10 +2204,12 @@ const Navbar = () => {
                   )}
                 </Link>
               </div>
+              <Link to="/" onClick={(prev) => setIsMenuOpen(!prev)}>
               <img
                 src={imgamx}
-                className="relative h-[30px] w-[100px]  box-border m-auto imgamx"
+                className="relative h-[30px] w-[100px]  box-border m-auto imgamx top-[16px] left-[10px]"
               />
+              </Link>
               <a
                 href="#"
                 className="text-2xl not-italic text-s pt-[8px] headhide"
@@ -2263,7 +2269,7 @@ const Navbar = () => {
           <nav
             className={`fixed  h-[100vh] w-[60%] bg-black top-[60px]  ${
               isMenuOpen ? "show" : "subhide"
-            } p-4 overflow-y-scroll `}
+            } p-1 overflow-y-scroll `}
           >
             <div className="flex flex-col  w-full h-full ">
               {/* <div className="fixed">
@@ -2277,7 +2283,7 @@ const Navbar = () => {
 
               <div className="pt-3">
                 <ul className="aligning_menu">
-                  <li className="pl-[20px]">
+                  {/* <li className="pl-[20px]">
                     <li>
                       <Link
                         to={"/"}
@@ -2287,7 +2293,7 @@ const Navbar = () => {
                         <p className="texts">Home</p>
                       </Link>
                     </li>
-                  </li>
+                  </li> */}
 
                   <li>
                     <li className="flex">
