@@ -1,0 +1,92 @@
+.ai-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #f4f4f4;
+  }
+  
+  .ai-background {
+    background-image: url('./ai.png'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .ai-content {
+    padding: 10px;
+    width: 50%;
+    margin-left: 60%;
+    margin-bottom: 100px;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
+  .ai-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .ai-subtitle {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: white;
+  }
+  
+  .ai-company {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .ai-description {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .ai-services {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .ai-social {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .ai-social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .ai-content {
+      width: 80%;
+      margin-left: 5%;
+      margin-bottom: 10%;
+    }
+  
+    .ai-title {
+      font-size: 1.5rem;
+    }
+  
+    .ai-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .ai-company,
+    .ai-description,
+    .ai-services,
+    .ai-social {
+      font-size: 0.9rem;
+    }
+  }
+  

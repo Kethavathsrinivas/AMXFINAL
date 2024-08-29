@@ -1,0 +1,92 @@
+.business-intelligence-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #f4f4f4;
+  }
+  
+  .business-intelligence-background {
+    background-image: url('./bi2.jpg'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .business-intelligence-content {
+    padding: 10px;
+    width: 50%;
+    margin-left: 60%;
+    margin-bottom: 100px;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
+  .business-intelligence-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .business-intelligence-subtitle {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: white;
+  }
+  
+  .business-intelligence-company {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .business-intelligence-description {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .business-intelligence-services {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .business-intelligence-social {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .business-intelligence-social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .business-intelligence-content {
+      width: 80%;
+      margin-left: 5%;
+      margin-bottom: 10%;
+    }
+  
+    .business-intelligence-title {
+      font-size: 1.5rem;
+    }
+  
+    .business-intelligence-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .business-intelligence-company,
+    .business-intelligence-description,
+    .business-intelligence-services,
+    .business-intelligence-social {
+      font-size: 0.9rem;
+    }
+  }
+  

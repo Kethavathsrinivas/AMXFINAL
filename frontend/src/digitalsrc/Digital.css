@@ -1,0 +1,178 @@
+.digital-container {
+    width: 100%;
+    /* padding: 24px; */
+  }
+  
+  /* Main GIF container */
+  .gif-container-digital {
+    position: relative;
+    width: 100%;
+    /* margin-bottom: 20px; */
+  }
+  
+  .main-gif-digital {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 30px;
+  }
+  
+  .stay-tuned {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    color: white;
+    font-size: 1.7rem;
+  }
+  
+  .amxsol-digital {
+    position: absolute;
+    width: 40%;
+    bottom: 10px;
+    right: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    margin-bottom: 30px;
+    /* text-align: center; */
+  }
+
+  .amxsol-digital a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Yellow Background Div with Icons and Title */
+  .light-yellow-box {
+    background-color: #fff7cc;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+    
+  }
+  
+  .yellow-box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .left-section-digital {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-section-digital span{
+    color: red;
+    font-size:30px ;
+  }
+  
+  .specialty-title {
+    font-weight: bold;
+    font-size: 25px;
+    color: #444;
+    margin-left: 10px;
+  }
+  
+  .icon-image-digital {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+  }
+  
+  .right-section-digital img {
+    margin-left: 8px;
+    display: flex;
+    
+  }
+  
+  /* GIF row section */
+  .gif-row-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 20px 70px;
+  }
+  
+  .gif-item {
+    width: 32%;
+    text-align: center;
+  }
+  
+  .gif-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .gif-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .gif-subtexts {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: #666;
+  }
+  
+  .gif-subtexts li {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .stay-tuned {
+      top: 10px;
+      right: 10px;
+      font-size: 1rem;
+    }
+  
+    .amxsol-digital {
+      font-size: 0.8rem;
+      width: 60%;
+      right: 5px;
+      bottom: 5px;
+    }
+  
+    .light-yellow-box {
+      padding: 15px;
+    }
+  
+    .specialty-title {
+      font-size: 18px;
+    }
+  
+    .yellow-box-content {
+      align-items: flex-start;
+    }
+  
+    .icon-image-digital {
+      width: 35px;
+      height: 35px;
+    }
+  
+    /* GIF row section adjustment for mobile */
+    .gif-row-section {
+      margin: 15px 10px;
+      flex-direction: column; /* Stack GIFs vertically */
+    }
+  
+    .gif-item {
+      width: 100%;
+      margin-bottom: 20px; /* Add spacing between GIFs */
+    }
+  
+    .gif-title {
+      font-size: 14px;
+    }
+  
+    .gif-subtexts li {
+      font-size: 12px;
+    }
+  }
+  

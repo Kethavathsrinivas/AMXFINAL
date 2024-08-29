@@ -1,0 +1,104 @@
+.legal-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: #f4f4f4;
+}
+
+.legal-background {
+  background-image: url('./legal.jpeg'); /* Replace with your image path */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire container */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.legal-content {
+  padding: 10px;
+  
+  width: 70vh;
+  margin-left: 70%;
+  margin-bottom: 5%;
+  text-align: right;
+  margin-right: 50px ;
+}
+
+.legal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.legal-subtitle {
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: white;
+}
+
+/* .legal-content{
+  text-align: right;
+  margin-right: 50px ;
+  
+} */
+
+.legal-company {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  
+}
+
+.legal-description {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.legal-services {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.legal-social {
+  font-size: 1rem;
+  color: white;
+}
+
+.social-icons a{
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .legal-content {
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+
+  .legal-title {
+    font-size: 1.5rem;
+  }
+
+  .legal-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .legal-company,
+  .legal-description,
+  .legal-services,
+  .legal-social {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+

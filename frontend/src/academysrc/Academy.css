@@ -1,0 +1,368 @@
+/* Container and Background */
+.academy-container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .academy-background {
+    background: url('../assets/academy/main1.gif') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    color: #fff;
+  }
+  
+  .academy-header {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    text-align: right;
+  }
+  
+  .academy-logo-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .academy-logo-text p {
+    margin: 5px 0;
+  }
+  
+  .academy-links {
+    margin-top: 10px;
+    
+  }
+  .academy-links a{
+    text-decoration: none;
+    color: white;
+  
+  }
+
+  
+  .academy-social-icons {
+    margin-top: 5px;
+  }
+
+  .academy-social-icons a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Main Title and Description in the Center */
+  .academy-main-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .b1{
+    color: black;
+  }
+
+  .r1{
+    color: red;
+  }
+  
+  .academy-main-content h1 {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  
+  .academy-main-content p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Scroll Arrow */
+  .scroll-arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  /* Footer Details Section */
+  .academy-footer {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    z-index: 100; /* Adjust z-index if needed */
+    background: rgba(0, 0, 0, 0.7); /* Optional: Add a semi-transparent background */
+    padding: 7px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  
+  .details-icon {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Styling for Details Menu */
+  .details-menu {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background: #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    color: #fff;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .details-menu a,
+  .details-menu button {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 13px;
+  }
+  
+  .report-options {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    width: 250px;
+    transform: translate(50%, -50%);
+  }
+  
+  .report-options p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .report-options button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .report-options button:hover {
+    background: #0056b3;
+  }
+  
+  
+  
+  /* Section after Background */
+  .academy-info {
+    background: #222;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .academy-info h2 {
+    font-size: 2rem;
+  }
+  
+  .academy-info p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Courses Grid */
+  .academy-courses {
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  .academy-courses h3 {
+    font-size: 4rem;
+  }
+
+  .academy-courses p {
+    margin-bottom: 20px;
+  }
+  
+  .academy-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 40px;
+    gap: 20px;
+  }
+  
+  .academy-course-card {
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .academy-course-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .academy-course-title {
+    color: #fff;
+    font-size: 1rem;
+  }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    /* Container and Background */
+    .academy-background {
+      height: 160vh; /* Increase height for better content fit */
+      background-size: cover;
+      background-position: center; /* Ensure the image stays centered */
+    }
+  
+    .academy-main-content {
+      top: 60%; /* Adjust vertical position to fit better within the increased height */
+      left: 50%;
+      width: 90%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  
+    .academy-main-content h1 {
+      font-size: 2.5rem; /* Decrease font size for better fit */
+    }
+  
+    .academy-main-content p {
+      font-size: 1rem; /* Adjust font size for better readability */
+      margin-top: 0.5rem;
+    }
+  
+    .scroll-arrow {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  
+    /* Footer Details Section */
+    .academy-footer {
+      bottom: 20px;
+      left: 10px;
+      padding: 5px 10px;
+      font-size: 1.5rem;
+    }
+  
+    .details-menu {
+      position: absolute;
+    bottom: 30px;
+    left: 0;
+    background: #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    color: #fff;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .details-menu a,
+    .details-menu button {
+      font-size: 14px;
+    }
+  
+    .report-options {
+      width: 90%;
+      max-width: 300px;
+      padding: 15px;
+      font-size: 1rem;
+    }
+  
+    .report-options p {
+      font-size: 1rem;
+    }
+  
+    .report-options button {
+      padding: 8px;
+    }
+  
+    /* Section after Background */
+    .academy-info {
+      padding: 20px;
+    }
+  
+    .academy-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .academy-info p {
+      font-size: 1rem;
+    }
+  
+    /* Courses Grid */
+    .academy-courses {
+      padding: 20px;
+    }
+  
+    .academy-courses h3 {
+      font-size: 2.5rem;
+    }
+  
+    .academy-courses p {
+      margin-bottom: 15px;
+    }
+  
+    .academy-courses-grid {
+      grid-template-columns: repeat(2, 1fr); /* Adjust columns for mobile */
+      margin: 0 10px;
+      gap: 10px;
+    }
+  
+    .academy-course-card {
+      padding: 8px;
+    }
+  
+    .academy-course-card img {
+      width: 100%;
+    }
+  
+    .academy-course-title {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  /* Tablet Styles */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust styles for tablets if needed */
+  }
+  
+  

@@ -1,0 +1,221 @@
+.industry-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../assets/industries/Industry.jpg'); /* Update the path to your background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .industry-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .industry-left-top {
+    position: absolute;
+    width: 30%;
+    top: 15%;
+    left: 5%;
+    color: white;
+  }
+  
+  .industry-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 90px;
+  }
+  
+  .industry-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: beige;
+  }
+  
+  .industry-highlight {
+    font-size: 1.2rem;
+    color: burlywood; /* Highlight color */
+  }
+  
+  .industry-right-bottom {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    color: white;
+    text-align: right;
+  }
+  
+  .industry-header {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  .industry-amxsol {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .industry-contact {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .industry-solutions {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .industry-connect {
+    font-size: 0.9rem;
+  }
+  
+  .industry-icons {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  
+  .industry-icons a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .industry-icons span {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* New Styles for Bottom Section */
+  .industry-bottom-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Background color for the bottom section */
+    color: #333;
+  }
+  
+  .industry-served-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .industry-served, .industry-contact-info, .industry-connect-info {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .industry-connect-info {
+    font-size: 1.2rem;
+  }
+
+  .industry-connect-info a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Responsive adjustments */
+  /* Responsive Styles for Mobile (Max-width: 768px) */
+@media (max-width: 768px) {
+    /* Industry Container */
+    .industry-container {
+      height: auto; /* Adjust height for better mobile view */
+      background-position: center top; /* Ensure background covers correctly */
+    }
+    
+    .industry-bg {
+      padding: 10px;
+    }
+  
+    .industry-left-top {
+      position: relative; /* Remove absolute positioning for mobile */
+      width: 100%; /* Full width on mobile */
+      top: auto;
+      left: auto;
+      margin-bottom: 20px; /* Space below the left-top content */
+    }
+    
+    .industry-title {
+      font-size: 1.2rem; /* Adjust font size for mobile */
+      margin-bottom: 20px; /* Reduce bottom margin */
+    }
+    
+    .industry-subtitle {
+      font-size: 1rem; /* Adjust font size for mobile */
+      margin-bottom: 10px;
+    }
+    
+    .industry-highlight {
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+    
+    .industry-right-bottom {
+      position: relative; /* Remove absolute positioning for mobile */
+      text-align: center; /* Center-align text for mobile */
+      margin-top: 20px; /* Space above the right-bottom content */
+    }
+    
+    .industry-header {
+      font-size: 1.6rem; /* Adjust font size for mobile */
+      margin-bottom: 15px; /* Reduce bottom margin */
+    }
+    
+    .industry-amxsol {
+      font-size: 1.2rem; /* Adjust font size for mobile */
+      margin-bottom: 10px;
+    }
+    
+    .industry-contact {
+      font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+    
+    .industry-solutions {
+      font-size: 0.8rem; /* Adjust font size for mobile */
+      margin-bottom: 15px; /* Reduce bottom margin */
+    }
+    
+    .industry-connect {
+      font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+    
+    .industry-icons {
+      font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+    
+    .industry-icons a {
+      font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+    
+    .industry-icons span {
+      font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+  
+    /* Bottom Section */
+    .industry-bottom-section {
+      padding: 20px 10px; /* Reduce padding for mobile */
+    }
+    
+    .industry-served-header {
+      font-size: 1.4rem; /* Adjust font size for mobile */
+      margin-bottom: 15px; /* Reduce bottom margin */
+    }
+    
+    .industry-served, .industry-contact-info, .industry-connect-info {
+      font-size: 0.8rem; /* Adjust font size for mobile */
+      margin-bottom: 10px; /* Reduce bottom margin */
+    }
+    
+    .industry-connect-info {
+      font-size: 1rem; /* Adjust font size for mobile */
+    }
+  
+    .industry-connect-info a {
+      font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+  }
+  
+  

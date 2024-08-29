@@ -1,0 +1,92 @@
+.cyber-security-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #f4f4f4;
+  }
+  
+  .cyber-security-background {
+    background-image: url('./cs12.jpg'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .cyber-security-content {
+    padding: 10px;
+    width: 50%;
+    margin-left: 60%;
+    margin-bottom: 100px;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
+  .cyber-security-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .cyber-security-subtitle {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: white;
+  }
+  
+  .cyber-security-company {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .cyber-security-description {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .cyber-security-services {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .cyber-security-social {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .cyber-security-social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .cyber-security-content {
+      width: 80%;
+      margin-left: 5%;
+      margin-bottom: 10%;
+    }
+  
+    .cyber-security-title {
+      font-size: 1.5rem;
+    }
+  
+    .cyber-security-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .cyber-security-company,
+    .cyber-security-description,
+    .cyber-security-services,
+    .cyber-security-social {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,92 @@
+.da-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #f4f4f4;
+  }
+  
+  .da-background {
+    background-image: url('./da.jpg'); /* Replace with your image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire container */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .da-content {
+    padding: 10px;
+    width: 50%;
+    margin-left: 60%;
+    margin-bottom: 100px;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
+  .da-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .da-subtitle {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: white;
+  }
+  
+  .da-company {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .da-description {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .da-services {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .da-social {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .da-social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .da-content {
+      width: 80%;
+      margin-left: 5%;
+      margin-bottom: 10%;
+    }
+  
+    .da-title {
+      font-size: 1.5rem;
+    }
+  
+    .da-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .da-company,
+    .da-description,
+    .da-services,
+    .da-social {
+      font-size: 0.9rem;
+    }
+  }
+  

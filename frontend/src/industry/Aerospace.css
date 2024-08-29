@@ -1,0 +1,597 @@
+.title-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  /* padding: 20px; */
+  position: relative;
+  top:60px;
+  /* margin: 0px 30px; */
+}
+
+.aerospace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #343a40;
+  padding: 15px 20px;
+  color: white;
+  position: relative; /* To position the tooltip relative to the header */
+  transition: background-color 0.3s ease;
+}
+
+.aerospace-header:hover {
+  background-color: #495057;
+}
+
+.aerospace-title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  margin-left: auto;
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.aerospace-header:hover .expand-icon {
+  color: #ffc107;
+}
+
+.section-divider {
+  margin: 10px 0;
+  border: 1px solid #495057;
+}
+
+.aerospace-content {
+  margin: 20px auto;
+  max-width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.full-description {
+  text-align: justify;
+}
+
+.full-description h2,
+.full-description h3 {
+  font-size: 1.8rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.full-description p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.full-description strong {
+  color: #007bff;
+}
+
+button {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #495057;
+}
+
+.help-section {
+  position: relative;
+  background-image: url("../assets/industries/aerospace.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.automotive-help-section {
+  position: relative;
+  background-image: url("../assets/industries/automotive.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.banking-help-section {
+  position: relative;
+  background-image: url("../assets/industries/banking.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.chemical-help-section {
+  position: relative;
+  background-image: url("../assets/industries/chemical.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.construction-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Construction.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.education-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Education.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.energy-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Energy.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.finance-help-section {
+  position: relative;
+  background-image: url("../assets/industries/finance.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.healthcare-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Healthcare.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.insurance-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Insurance.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.manufacturing-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Manufacturing.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pharma-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Pharma.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.realestate-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Real-Estate.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.retailstore-help-section {
+  position: relative;
+  background-image: url("../assets/industries/retail-store.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.software-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Software.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.technology-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Technology.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.telecom-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Telecom.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.transportation-help-section {
+  position: relative;
+  background-image: url("../assets/industries/Transportation.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Left-side Help Background Content */
+.help-bg {
+  /* flex: 1; */
+  width: 30%;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.help-bg p {
+  font-size: 1.2rem;
+}
+
+/* Button Section Styling */
+.button-column {
+  margin-top: 20px;
+}
+
+.solution-button,
+.service-button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.service-button {
+  background: linear-gradient(45deg, #ff416c, #8e44ad);
+  border: none;
+}
+
+.solution-button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+}
+
+.looking-for {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Right-side Content */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.industry-navigation .industry-path {
+  font-size: 1.25rem;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.industry-bottom-left {
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 50px;
+  margin-right: 40px;
+}
+
+.industry-bottom-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.bs {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.industry-bottom-left h5 {
+  font-size: 1.2rem;
+}
+.industry-bottom-left a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive Styles for Mobile (Max-width: 768px) */
+@media (max-width: 768px) {
+  /* Help Section */
+  .help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .automotive-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .banking-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .chemical-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .construction-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .education-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .energy-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .finance-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .healthcare-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .insurance-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+  .manufacturing-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .pharma-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .retailstore-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .realestate-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .software-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .technology-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .telecom-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  .transportation-help-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for better fit on mobile */
+    padding: 10px;
+  }
+
+  /* Adjust left-side content */
+  .help-bg {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .full-description {
+    text-align: justify;
+  }
+
+  .help-bg p {
+    font-size: 1rem;
+  }
+
+  /* Button Section */
+  .button-column {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .solution-button,
+  .service-button {
+    width: 90%; /* Adjust width for better fit on mobile */
+    margin: 10px auto; /* Center align the buttons */
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    text-align: center; /* Center text on mobile */
+  }
+
+  /* Adjust right-side content */
+  .right-content {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .industry-navigation .industry-path {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+
+  .industry-bottom-left {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .industry-bottom-left h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .bs {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .industry-bottom-left h5 {
+    font-size: 1rem;
+  }
+
+  .industry-bottom-left a {
+    font-size: 0.9rem;
+  }
+  .title-container {
+    margin: 0px; /* Add 20px margin for mobile */
+  }
+
+  .aerospace-title {
+    font-size: 1.5rem;
+  }
+}

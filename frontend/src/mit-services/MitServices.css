@@ -1,0 +1,198 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.bg-container-1 {
+  background-image: url("./color-photo2.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.mit-content {
+  margin-right: 30px;
+}
+.frst-heading {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  margin-right: 40px;
+}
+.frst-paragraph {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.frst-paragraph a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+.frst-heading-2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+.second-paragraph {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+.bg-container-2 {
+  text-align: center;
+  padding: 10px;
+}
+.third-heading {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+.third-paragraph {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.bg-container-3 {
+  padding: 20px;
+}
+.screenshot_1 {
+  width: 100vw;
+  height: 500px;
+}
+.bg-container-4 {
+  padding: 20px;
+}
+.four-paragraph {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+.blackBox {
+  background-color: black;
+  margin: 6px;
+  height: 8px;
+  width: 8px;
+}
+.five-paragraph {
+  display: flex;
+}
+.small-heaing {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.small-paragraph {
+  color: black;
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+.bg-container-7 {
+  margin-left: 10px;
+}
+@media (max-width: 700px) {
+  .bg-container-1 {
+    background-image: url("./color-photo2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 5px;
+  }
+
+  .mit-content {
+    margin: 0;
+    padding-left: 5px;
+    margin-bottom: 30px;
+  }
+
+  .frst-heading {
+    font-size: 18px; /* Decreased font size */
+    margin: 0;
+    padding-left: 5px;
+  }
+
+  .frst-paragraph {
+    font-size: 12px; /* Decreased font size */
+    margin: 0;
+    padding-left: 5px;
+  }
+
+  .frst-heading-2 {
+    font-size: 16px; /* Decreased font size */
+    margin: 0;
+    padding-left: 5px;
+  }
+
+  .second-paragraph {
+    font-size: 14px; /* Decreased font size */
+    margin: 0;
+    padding: 5px;
+  }
+
+  .bg-container-2 {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .third-heading {
+    font-size: 18px; /* Decreased font size */
+  }
+
+  .third-paragraph {
+    font-size: 14px; /* Decreased font size */
+  }
+
+  .bg-container-3,
+  .bg-container-4 {
+    padding: 10px;
+  }
+
+  .screenshot_1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .four-paragraph {
+    font-size: 18px; /* Decreased font size */
+  }
+
+  .blackBox {
+    margin: 2px;
+    height: 4px; /* Decreased size */
+    width: 4px; /* Decreased size */
+  }
+
+  .five-paragraph {
+    display: block;
+    padding: 5px;
+  }
+
+  .small-heaing {
+    font-size: 14px; /* Decreased font size */
+  }
+
+  .small-paragraph {
+    font-size: 14px; /* Decreased font size */
+  }
+
+  .bg-container-7 {
+    margin-left: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
