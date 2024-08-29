@@ -167,7 +167,7 @@ const Newsroom = () => {
           </ul>
         </section>
 
-        <section className="contact-unique">
+        {/* <section className="contact-unique">
           <h2>Contact Us</h2>
           <p>
             For media inquiries, please reach out to our media relations team.
@@ -178,9 +178,9 @@ const Newsroom = () => {
           <p>
             <strong>Phone:</strong> +1 (215) 268-6168
           </p>
-        </section>
+        </section> */}
 
-        <footer className="footer-unique">
+        {/* <footer className="footer-unique">
           <p>
             We are committed to providing timely and accurate information. If
             you have any questions or need further assistance, don't hesitate to
@@ -200,7 +200,7 @@ const Newsroom = () => {
               www.amxsol.com
             </a>
           </p>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );

@@ -85,10 +85,10 @@ const Chemical = () => {
 
           {/* Button Section - Left Side */}
           <div className="button-column">
-            <button className="solution-button" onClick={() => window.location.href = '/Businesssolution'}>
+            <button className="solution-button" onClick={() => window.location.href = '/services'}>
               Business Solutions
             </button>
-            <button className="solution-button" onClick={() => window.location.href = '/techsolutions'}>
+            <button className="solution-button" onClick={() => window.location.href = '/tech'}>
               Technology Solutions
             </button>
             <button className="solution-button" onClick={() => window.location.href = '/talent'}>
@@ -96,9 +96,8 @@ const Chemical = () => {
             </button>
           </div>
 
-          <p className="looking-for">Looking for something else?</p>
+          {/* <p className="looking-for">Looking for something else?</p>
 
-          {/* Additional Buttons */}
           <div className="button-column">
             <button className="service-button" onClick={() => window.location.href='/contact'}>
               Request for Services
@@ -109,7 +108,7 @@ const Chemical = () => {
             <button className="service-button" onClick={() => window.location.href = '/hire-talent'}>
               Hire Talent
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Right-side Content */}

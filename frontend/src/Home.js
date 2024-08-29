@@ -543,7 +543,7 @@ const Home = () => {
     //     }
     //   `}</style>
 
-    <div className="w-full mx-auto relative top-[60px]">
+    <div className="w-full mx-auto relative top-[60px] mb-[100px]">
       <div className="relative">
         <div className="w-full overflow-hidden shadow-lg mb-8 px-0">
           <div
@@ -691,6 +691,16 @@ const Home = () => {
             Let's Grow Together Giving wings to financial dreams.
           </p>
 
+          <div className="pl-[10px] pr-[10px]">
+            <h1>AMXSOL</h1>
+            <h1>365 DAYS VALUE ADDED</h1>
+            <h2>WHAT WE DO</h2>
+            <p>Building greater future through collective knowledge and Innovation</p>
+            <p className="" style={{fontWeight:"none"}}>We go beyond helping your business transform through our Solutions. We help you to make a meaningful difference to your customers and to the communities you serve. AMXSOL for ∞infinite possibilities.</p>
+            <h1>WHAT WE CAN DO FOR YOU</h1>
+            <p>AMXSOL provides cost-effective software solutions and consulting services.</p>
+          </div>
+
           <div className="flex items-center justify-center md:justify-start w-full my-8">
             <div className="flex-grow border-t-2 border-gray-700 diamond-border"></div>
             <span className="mx-4 text-2xl text-purple-500">◆</span>
@@ -725,7 +735,8 @@ const Home = () => {
                   d="M9 5l7 7-7 7"
                 ></path>
               </svg>
-              Business Solutions
+              <Link to="/tech"> Technology Solutions</Link>
+             
             </li>
             <li className="flex items-center text-2xl text-gray-700 hover:text-blue-500 transition duration-200 ease-in-out transform hover:scale-105">
               <svg
@@ -742,14 +753,15 @@ const Home = () => {
                   d="M9 5l7 7-7 7"
                 ></path>
               </svg>
-              Talent Solutions
+              <Link to="/services">Business Solutions</Link>
+              
             </li>
           </ul>
 
           <p className="mt-4 text-center md:text-left">
-            AMXSOL, a leading Business Partner, empowers small and mid-sized
-            businesses worldwide. Our headquarters are in Hyderabad, India, but
-            we serve clients globally. We specialize in innovative IT solutions
+            AMXSOL is your global service business partner.We empowers small and mid-sized
+            businesses worldwide. Our headquarters is in Pennsylvania, USA and 
+            we serve clients across 50 states in the united states and globally. We specialize in innovative IT solutions
             that optimize your operations and drive sustainable growth.
           </p>
 
@@ -1474,7 +1486,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center ">
         {divisions.map((division, index) => (
           <div key={index} className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
             <DivisionCard
@@ -1486,7 +1498,7 @@ const Home = () => {
         ))}
       </div>
 
-      <section className="py-4 bg-gray-100" style={{ marginTop: "-20px" }}>
+      {/* <section className="py-4 bg-gray-100" style={{ marginTop: "-20px" }}>
         <div className="container mx-auto">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center w-full my-4">
@@ -1502,32 +1514,9 @@ const Home = () => {
                 <div className="border-b-2 border-green-600 w-12"></div>
               </div>
             </div>
-            {/* <p className="text-lg text-gray-600">
-              Over 10 Employees working in more than 8 States in India and 20
-              Employees working in American Branch.
-            </p> */}
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* American Corporate Office Section */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4">American Corporate HQ</h3>
-              <p className="mb-4">
-                AMXSOL LLC, 1000 Northbrook Drive, Suite 100, Trevose, PA 19053
-                USA <br /> Tel: +1 (215) 268-6168 Email: info@amxsol.com
-              </p>
-            </div>
-            {/* Indian Branch Office Section */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4">Global Indian Office</h3>
-              <p className="mb-4">
-                #3-88/3/A, Sree Krishna Arcade, Nizampet, Hyderabad | 500090 TG,
-                INDIA <br /> Tel: +91-4035759443 | +91-8179382764 Email:
-                info@amxsol.com
-              </p>
-            </div>
-          </div>
+           
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

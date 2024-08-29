@@ -193,13 +193,14 @@ const Talent = () => {
         </div>
       </div>
       <div className="flex flex-col p-8 bg-blue-100 ">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">
-          Finding the right talent takes a lot of time and expertise
+      <h2 className="text-3xl font-bold mb-4 text-gray-800">
+      About AMXSOL Talent Solutions 
+        </h2>
+        <h2 className="text-2xl  mb-4 text-gray-800">
+        "Connecting Talent with Opportunity" 
         </h2>
         <p className="text-lg text-gray-600 mb-4">
-          Our strategic solutions help to simplify the recruiting process by
-          giving you access to our extensive talent community. We serve clients
-          from tech startups and mid-market organizations to the Fortune 100.
+        AMXSOL Talent Solutions is a global staffing, offshore development, ERP solutions, and managed services firm dedicated to providing tailored solutions to meet the unique needs of our clients. With a strong focus on quality and customer satisfaction, AMXSOL Talent Solutions has established itself as a leader in the staffing industry, delivering exceptional talent and strategic services to businesses across various sectors. 
         </p>
       </div>
       <div className="p-8 min-h-screen overflow-auto ">

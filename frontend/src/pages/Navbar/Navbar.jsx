@@ -85,13 +85,13 @@ const Navbar = () => {
         <>
           <nav className="h-[60px] w-full bg-black fixed z-1000">
             <div className="leftnav box-border h-[60px] flex justify-center align-center pt-[10px]">
-              <Link to="/">
+              <Link to="/" onClick={() => handleClick(null)}>
               <img
                 src={imgamx}
                 className="relative h-[30px] w-[100px]  box-border m-auto"
               />
               </Link>
-              <a
+              {/* <a
                 href="#"
                 className="mainhead bolder  not-italic text-s flex pt-[8px]"
               >
@@ -99,7 +99,8 @@ const Navbar = () => {
                   <img src={inimg} className="h-[20px] ml-[8px] mt-[8px]" />
                 </span>
                 infinite possibilities
-              </a>
+
+              </a> */}
             </div>
 
             <div className="rightnav ">
@@ -856,7 +857,7 @@ const Navbar = () => {
                           </li>
                         </li>
 
-                        <li className="aligning">
+                        {/* <li className="aligning">
                           <li className="my-[20px] flex w-full ">
                             <div className="sub">
                               <Link
@@ -869,7 +870,7 @@ const Navbar = () => {
                               </Link>
                             </div>
                           </li>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   )}
@@ -911,8 +912,9 @@ const Navbar = () => {
                 <li className="">
                   <a
                     href="/career"
-                    className="not-italic font-mono headsize text-color"
+                    className=" headsize text-color"
                     onClick={() => handleClick(null)}
+                    style={{fontWeight:""}}
                   >
                     Careers
                   </a>
@@ -921,8 +923,9 @@ const Navbar = () => {
                 <li className="">
                   <a
                     href="/newsroom"
-                    className="not-italic font-mono headsize text-color"
+                    className=" headsize text-color"
                     onClick={() => handleClick(null)}
+                    style={{fontWeight:""}}
                   >
                     Newsroom
                   </a>
@@ -2450,7 +2453,7 @@ const Navbar = () => {
                                 )}
                               </Link>
                               <Link className="text-color">
-                                <p className="texts">Capabities</p>
+                                <p className="texts">Capabilities</p>
                               </Link>
                             </li>
                             {isSubmenuClick === 4 && (

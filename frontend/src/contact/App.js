@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import backgroundVideo from "./vdcontact.mp4";
 import image1 from "./image1.jpg";
 import image2 from "./image2.jpg";
+import { Link } from "react-router-dom";
 
 function ContactApp() {
   const [formData, setFormData] = useState({
@@ -194,17 +195,16 @@ function ContactApp() {
           />
           {showAddress && selectedImage === 2 && (
             <p className="text-white mt-4 text-center whitespace-pre-line bg-purple-600 p-2 rounded-lg">
-              <b>Global Indian Office </b>
+              <b>AMXSOL INDIA  </b>
               <br />
-              Global R&D Center:
+              Global Research & Delivery Center:
               <br />
-              AMXSOL LLP
+              N Heights,Hitech City , <br/> Hyderabad TG 
+              <br/>
+              
+        500090 TG INDIA
               <br />
-              #3-88/3/A, Sree Krishna Arcade,
-              <br />
-              Nizampet, Hyderabad 500090 TG INDIA
-              <br />
-              TEL: +91-4035759443 | +91-8179382764
+              TEL: +91-8179382764
               <br />
               Email: info@amxsol.com
               <br />

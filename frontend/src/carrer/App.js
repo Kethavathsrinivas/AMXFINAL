@@ -23,15 +23,15 @@ const JobCard = ({ job }) => {
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <h3 className="text-2xl font-bold text-white">{job.title}</h3>
         </div>
-        <button className="absolute sm:w-22 sm:h-6 bottom-4 right-4 px-4 py-0.5 bg-blue-600 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-blue-700">
+        {/* <button className="absolute sm:w-22 sm:h-6 bottom-4 right-4 px-4 py-0.5 bg-blue-600 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-blue-700">
           Join Now
-        </button>
+        </button> */}
       </div>
       <div className="p-6">
         <p className="text-xl font-bold text-gray-900 mb-2">ID: {job.id}</p>
         <p className="text-lg text-blue-600 mb-2">Location: {job.location}</p>
         <p className="text-lg font-semibold text-green-600 mb-2">
-          Salary: {job.salary}
+          {/* Salary: {job.salary} */}
         </p>
         <p className="text-base mb-4  group-hover:block hidden">
           {job.description.map((point, index) => (
@@ -138,7 +138,7 @@ const JobForm = ({ jobTitles }) => {
 const CarrerApp = () => {
   const jobs = [
     {
-      id: 1,
+      id: 1082924,
       title: "Software Engineer",
       location: "San Francisco, CA",
       salary: "$120,000 - $150,000",
@@ -150,7 +150,7 @@ const CarrerApp = () => {
       image: jobImage1,
     },
     {
-      id: 2,
+      id: 2082924,
       title: "Data Scientist",
       location: "New York, NY",
       salary: "$110,000 - $140,000",
@@ -162,7 +162,7 @@ const CarrerApp = () => {
       image: jobImage2,
     },
     {
-      id: 3,
+      id: 3082924,
       title: "Product Manager",
       location: "Seattle, WA",
       salary: "$130,000 - $160,000",
@@ -174,7 +174,7 @@ const CarrerApp = () => {
       image: jobImage3,
     },
     {
-      id: 4,
+      id: 4082924,
       title: "UX Designer",
       location: "Los Angeles, CA",
       salary: "$100,000 - $130,000",
@@ -186,7 +186,7 @@ const CarrerApp = () => {
       image: jobImage4,
     },
     {
-      id: 5,
+      id: 5082924,
       title: "Marketing Specialist",
       location: "Chicago, IL",
       salary: "$90,000 - $120,000",
@@ -198,7 +198,7 @@ const CarrerApp = () => {
       image: jobImage5,
     },
     {
-      id: 6,
+      id: 6082924,
       title: "Sales Representative",
       location: "Dallas, TX",
       salary: "$80,000 - $110,000",
@@ -210,7 +210,7 @@ const CarrerApp = () => {
       image: jobImage6,
     },
     {
-      id: 7,
+      id: 7082924,
       title: "Customer Support",
       location: "Miami, FL",
       salary: "$70,000 - $100,000",
@@ -222,7 +222,7 @@ const CarrerApp = () => {
       image: jobImage7,
     },
     {
-      id: 8,
+      id: 8082924,
       title: "HR Manager",
       location: "Boston, MA",
       salary: "$120,000 - $150,000",
@@ -234,10 +234,10 @@ const CarrerApp = () => {
       image: jobImage8,
     },
     {
-      id: 9,
+      id: 9082924,
       title: "Finance Analyst",
       location: "Atlanta, GA",
-      salary: "$100,000 - $130,000",
+     
       description: [
         "Analyze financial data and trends.",
         "Prepare financial reports and forecasts.",
@@ -246,10 +246,9 @@ const CarrerApp = () => {
       image: jobImage9,
     },
     {
-      id: 10,
+      id: 10082924,
       title: "Other",
       location: null,
-      salary: null,
       description: null,
       image: null,
     },
@@ -258,7 +257,7 @@ const CarrerApp = () => {
   const jobTitles = jobs.map((job) => job.title);
 
   return (
-    <div className="  relative top-[0px] mb-32 ">
+    <div className="  relative top-[0px]  ">
       <div
         className="bg-image h-80  w-full flex items-center justify-center overflow-hidden relative"
         style={{
@@ -284,11 +283,7 @@ const CarrerApp = () => {
               </div>
             ))}
           </div>
-          <hr className="mt-8 border-4 " />
-          <h2 className="text-4xl md:text-6xl font-bold mt-8 text-center text-black">
-            Join us now
-          </h2>
-          <JobForm jobTitles={jobTitles} />
+          
         </div>
       </div>
     </div>

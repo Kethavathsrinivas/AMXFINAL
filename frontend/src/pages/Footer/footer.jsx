@@ -151,23 +151,29 @@ const Footer = () => {
 
   return (
     <>
-      <footer>
+      <footer className="mainfooter pt-[40px]">
+      {/* <video autoPlay loop muted className="background-video rounded-lg">
+            <source src={bgimg} type="video/mp4" />
+          </video> */}
+
         <div>
+          
           <div>
+         
             <div className="mainheadfooter">
               <div className="leftfooter">
                 <div>
-                  <h1 className="">
+                  <h1 className="text-white">
                     AMXSOL worldwide contact us for ∞
                     <i>infinite possibilities</i>{" "}
                   </h1>
-                  <p className="text-black">
+                  <p className="text-white">
                     Connect with us on:{" "}
                     <a
                       href="https://www.linkedin.com/company/amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black"
+                      className="text-white"
                     >
                       | in |
                     </a>
@@ -175,7 +181,7 @@ const Footer = () => {
                       href="https://x.com/amxsol?mx=2"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black"
+                      className="text-white"
                     >
                       X |
                     </a>
@@ -183,7 +189,7 @@ const Footer = () => {
                       href="https://www.facebook.com/amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black"
+                      className="text-white"
                     >
                       f |
                     </a>
@@ -191,6 +197,7 @@ const Footer = () => {
                       href="https://www.youtube.com/@amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="text-white"
                     >
                       Y |
                     </a>
@@ -198,7 +205,7 @@ const Footer = () => {
                       href="https://api.whatsapp.com/send?phone=your-number"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black"
+                      className="text-white"
                     >
                       ✆ |
                     </a>
@@ -206,7 +213,7 @@ const Footer = () => {
                       href="mailto:your-email@example.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black"
+                      className="text-white"
                     >
                       ✉ |
                     </a>
@@ -214,7 +221,7 @@ const Footer = () => {
                       href="/your-other-page"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black"
+                      className="text-white"
                     >
                       🕸 |
                     </a>
@@ -222,13 +229,13 @@ const Footer = () => {
                 </div>
                 <div>
                   <h1>AMXSOL USA Global Corporate Headquarters</h1>
-                  <p className="text-black">
+                  <p className="text-white">
                     1000 Northbrook Drive, Suite 100, Trevose PA 19053 USA |
                     <a
                       href="https://www.linkedin.com/company/amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black mx-[10px]"
+                      className="text-white mx-[10px]"
                     >
                       +1​ (215) 268-6168 {"  "} |
                     </a>
@@ -236,7 +243,7 @@ const Footer = () => {
                       href="https://x.com/amxsol?mx=2"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black mx-[10px]"
+                      className="text-white mx-[10px]"
                     >
                       info@amxsol.com |
                     </a>
@@ -244,15 +251,15 @@ const Footer = () => {
                       href="https://www.facebook.com/amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black mx-[10px]"
+                      className="text-white ml-[1px] "
                     >
-                      f |
+                      f <span className="ml-[1px]">|</span>
                     </a>
                     <a
                       href="https://www.youtube.com/@amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-black mx-[10px]"
+                      className="text-white mx-[10px]"
                     >
                       www.amxsol.com
                     </a>
@@ -268,15 +275,15 @@ const Footer = () => {
             </div>
             <div className="mainheadfooter1">
               <div className="submainfooter1">
-                <h1>AMXSOL INDIA Global Research & Delivery Center</h1>
-                <p className="text-black">
+                <h1 className="text-white">AMXSOL INDIA Global Research & Delivery Center</h1>
+                <p className="text-white">
                   N Heights, Hitech City, Hyderabad TG 500090 INDIA
                   <br />
                   <a
                     href="https://www.linkedin.com/company/amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black mx-[10px]"
+                    className="text-white mx-[10px]"
                   >
                     +91​ 81793 82764 {"  "} |
                   </a>
@@ -284,7 +291,7 @@ const Footer = () => {
                     href="https://x.com/amxsol?mx=2"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black mx-[10px]"
+                    className="text-white mx-[10px]"
                   >
                     info@amxsol.com |
                   </a>
@@ -292,15 +299,15 @@ const Footer = () => {
                     href="https://www.youtube.com/@amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black mx-[10px]"
+                    className="text-white mx-[10px]"
                   >
                     www.amxsol.com
                   </a>
                 </p>
               </div>
               <div className="submainfooter1">
-                <h1>AMXSOL KSA Business Development Research Facility</h1>
-                <p className="text-black">
+                <h1 className="text-white">AMXSOL KSA Business Development Research Facility</h1>
+                <p className="text-white">
                   Building# 3248, C16 St, Al Aqrabiyah, Al Khobar 34445, Kingdom
                   of SAUDI ARABIA
                   <br />
@@ -308,7 +315,7 @@ const Footer = () => {
                     href="https://www.linkedin.com/company/amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black mx-[10px]"
+                    className="text-white mx-[10px]"
                   >
                     +966 53 298 9548 {"  "} |
                   </a>
@@ -316,7 +323,7 @@ const Footer = () => {
                     href="https://x.com/amxsol?mx=2"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black mx-[10px]"
+                    className="text-white mx-[10px]"
                   >
                     info@amxsol.com |
                   </a>
@@ -324,7 +331,7 @@ const Footer = () => {
                     href="https://www.youtube.com/@amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black mx-[10px]"
+                    className="text-white mx-[10px]"
                   >
                     www.amxsol.com
                   </a>
@@ -332,8 +339,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="copyright-container font-bold  text-center py-3 text-sm text-white ">
+            COPYRIGHT &copy; 2022 - 2024 ,AMXSOL ALL RIGHTS RESERVED PRIVACY
+            POLICY. All rights reserved.
+          </div>
         </div>
-        <footer className="footer relative z-0">
+        {/* <footer className="footer relative z-0">
           <video autoPlay loop muted className="background-video rounded-lg">
             <source src={bgimg} type="video/mp4" />
           </video>
@@ -352,82 +363,11 @@ const Footer = () => {
           <div className="footer-content h-0.5 bg-green-100 m-10"></div>
 
           <div className="footer-icons flex justify-center space-x-5 py-2.5 mx-10 rounded-md">
-            {/* <div className={`content1 ${showContent ? 'slide-in1' : ''}`}><a href="#"><FaLinkedin /></a></div> */}
-            {/* <div className={`content1 ${showContent ? 'slide-in1' : ''}`}><a href="#"><FaFacebook /></a></div> */}
-            {/* <div className={`content1 ${showContent ? 'slide-in1' : ''}`}><a href="#"><FaTwitter /></a></div> */}
-            {/* <div className={`content2 ${showContent ? 'slide-in1' : ''}`}><a href="#"><FaWhatsapp /></a></div> */}
-            {/* <div className={`content2 ${showContent ? 'slide-in1' : ''}`}><a href="#"><FaYoutube /></a></div> */}
-            {/* <div className={`content2 ${showContent ? 'slide-in1' : ''}`}><a href="#"><FaVoicemail /></a></div> */}
-
-            {/* <div className="cardf">
-            <div className="background"></div>
-                    <div className="logo">
-                        Socials
-                      </div>
-
-                <a href="#"><div className="box box1"><span className="icon">
-                </span></div></a>
-
-                <a href="##"><div className="box box2"> <span className="icon">
-                </span></div></a>
-
-                <a href="###"><div className="box box3"><span className="icon">
-                </span></div></a>
-
-                <a href="###"><div className="box box4"><span className="icon">
-                </span></div></a>
-
-                <a href="###"><div className="box box5"><span className="icon">
-                </span></div></a>
-
-                <a href="#"><div className="box box6"><span className="icon">
-                <FaVoicemail  color="black"/>
-                </span></div></a>
-
-            </div>
-        </div> */}
+           
 
             <div className="card_i flex">
               <img src={amxsolImage} className="h-[30px] w-[100px]" />
-              {/* <a
-              href="https://www.linkedin.com/company/amxsol"
-              className="socialContainer containerOne"
-            >
-              <FaLinkedin color="black" />
-            </a>
-
-            <a
-              href="https://www.facebook.com/amxsol"
-              class="socialContainer containerTwo"
-            >
-              <FaFacebook color="black" />
-            </a>
-
-            <a
-              href="https://x.com/amxsol"
-              class="socialContainer containerThree"
-            >
-              <FaTwitter color="black" />
-            </a> */}
-
-              {/* <a href="https://whatsapp.com/channel/0029Vad8BxA1dAwCpJZtys2V"> */}
-              {/* <a
-              href="https://whatsapp.com/channel/0029Vad8BxA1dAwCpJZtys2V"
-              class="socialContainer containerFour"
-            >
-              <FaWhatsapp color="black" />
-            </a>
-
-            <a
-              href="https://www.youtube.com/@amxsol"
-              class="socialContainer containerFive"
-            >
-              <FaYoutube color="black" />
-            </a>
-
-            <a href="#" class="socialContainer containerOne">
-              <FaInstagram color="black" />
-            </a> */}
+             
             </div>
           </div>
           <div className="copyright-container  text-center py-3 text-sm text-white m-10">
@@ -436,7 +376,8 @@ const Footer = () => {
           </div>
 
           <div className="h-[30px]"></div>
-        </footer>
+        </footer> */}
+      
       </footer>
     </>
   );

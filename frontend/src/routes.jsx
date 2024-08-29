@@ -16,7 +16,7 @@ import {
 import Home from "./Home";
 import AboutUs from "./AboutUs";
 import ServicePage1 from "./components/ServicePage1";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import Talent from "./talent/talent";
 // import App from "./App";
 // import Navbar from "./components/Navbar";
@@ -29,7 +29,7 @@ import CarrerApp from "./carrer/App";
 // import Navbar from "./changednav/components/Navbar";
 import ContactApp from "./contact/App";
 // import ModernNav from "./ModernNav/ModernNav";
-import IndustrySection from "./industries/Industries";
+// import IndustrySection from "./industries/Industries";
 import ServicePage12 from "./Academy_codes/Academy";
 import FoundationApp from "./foundation/App";
 import Aerospace from "./Amxsol_Industries/Industries/Aerospace";
@@ -48,7 +48,7 @@ import MitServices from "./mit-services/MitServices"
 
 
 import Chemical from "./industry/Chemical";
-import Industries from "./industry/Industries";
+// import Industries from "./industry/Industries";
 import Construction from "./industry/Construction";
 import People from "./pages/OurPeople/People";
 import Education from "./industry/Education";
@@ -76,6 +76,8 @@ import DA from "./data-analytics/DA";
 
 import NewFooter from './pages/Footer/footer'
 
+import Industries from "./industry/Industries";
+
 
 const AppRoutes = () => {
   return (
@@ -92,7 +94,7 @@ const AppRoutes = () => {
         <Route path="/services" element={<ServicePage1 />} />
         <Route path="/contact" element={<ContactApp />} />
         <Route path="/talent" element={<Talent />} />
-        <Route path="/industries" element={<IndustrySection />} />
+        {/* <Route path="/industries" element={<Industries />} /> */}
         <Route path="/academy" element={<ServicePage12 />} />
         <Route path="/foundation" element={<FoundationApp />} />
         {/* <Route path="/aerospace" element={<Aerospace/>} /> */}
