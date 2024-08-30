@@ -247,14 +247,14 @@ const Footer = () => {
                     >
                       info@amxsol.com |
                     </a>
-                    <a
+                    {/* <a
                       href="https://www.facebook.com/amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white ml-[1px] "
                     >
                       f <span className="ml-[1px]">|</span>
-                    </a>
+                    </a> */}
                     <a
                       href="https://www.youtube.com/@amxsol"
                       target="_blank"
@@ -273,17 +273,17 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="mainheadfooter1">
-              <div className="submainfooter1">
+            <div className="mainheadfooter1 text-justify">
+              <div className="submainfooter1 text-justify">
                 <h1 className="text-white">AMXSOL INDIA Global Research & Delivery Center</h1>
                 <p className="text-white">
                   N Heights, Hitech City, Hyderabad TG 500090 INDIA
-                  <br />
+                  
                   <a
                     href="https://www.linkedin.com/company/amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white mx-[10px]"
+                    className="text-white mx-[0px]"
                   >
                     +91​ 81793 82764 {"  "} |
                   </a>
@@ -305,17 +305,17 @@ const Footer = () => {
                   </a>
                 </p>
               </div>
-              <div className="submainfooter1">
-                <h1 className="text-white">AMXSOL KSA Business Development Research Facility</h1>
-                <p className="text-white">
+              <div className="submainfooter1 text-justify">
+                <h1 className="text-white text-justify">AMXSOL KSA Business Development Research Facility</h1>
+                <p className="text-white text-justify">
                   Building# 3248, C16 St, Al Aqrabiyah, Al Khobar 34445, Kingdom
                   of SAUDI ARABIA
-                  <br />
+                  
                   <a
                     href="https://www.linkedin.com/company/amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white mx-[10px]"
+                    className="text-white mx-[0px]"
                   >
                     +966 53 298 9548 {"  "} |
                   </a>

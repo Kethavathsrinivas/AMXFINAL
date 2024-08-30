@@ -1052,7 +1052,7 @@ const Navbar = () => {
                 className="relative  h-[30px] w-[100px]  box-border m-auto"
               />
               </Link>
-              <a
+              {/* <a
                 href="#"
                 className="mainhead bolder  not-italic text-s flex pt-[8px]"
               >
@@ -1060,7 +1060,7 @@ const Navbar = () => {
                   <img src={inimg} className="h-[20px] ml-[8px] mt-[8px]" />
                 </span>
                 infinite possibilities
-              </a>
+              </a> */}
             </div>
 
             <div className="rightnav ">
@@ -2213,16 +2213,16 @@ const Navbar = () => {
                 className="relative h-[30px] w-[100px]  box-border m-auto imgamx top-[16px] left-[10px]"
               />
               </Link>
-              <a
+              {/* <a
                 href="#"
                 className="text-2xl not-italic text-s pt-[8px] headhide"
               >
-                {/* AMXSOL */}
+                
                 <span>
                   <img src={inimg} className="h-[20px] ml-[8px] mt-[10px]" />
                 </span>
                 infinite possibilities
-              </a>
+              </a> */}
             </div>
 
             <div className="rightnav ">

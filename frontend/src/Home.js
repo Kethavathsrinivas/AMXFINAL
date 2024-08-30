@@ -676,7 +676,7 @@ const Home = () => {
         </div>
 
         <div className="flex-1 md:ml-8 " style={{ marginTop: "-20px" }}>
-          <div className="flex items-center justify-center w-full my-8">
+          {/* <div className="flex items-center justify-center w-full my-8">
             <div className="flex-grow border-t-2 border-gray-700 wavy-border"></div>
             <span className="mx-4 text-2xl text-blue-500">★</span>
             <h1 className="text-4xl font-bold font-cinzel mx-4">
@@ -684,7 +684,7 @@ const Home = () => {
             </h1>
             <span className="mx-4 text-2xl text-green-500">★</span>
             <div className="flex-grow border-t-2 border-gray-700 wavy-border"></div>
-          </div>
+          </div> */}
 
           <p className="mt-4 text-center md:text-left">
             Handling tough Work tasks. Giving Futures to your Business not Just,
@@ -735,7 +735,8 @@ const Home = () => {
                   d="M9 5l7 7-7 7"
                 ></path>
               </svg>
-              <Link to="/tech"> Technology Solutions</Link>
+              <Link to="/services">Business Solutions</Link>
+
              
             </li>
             <li className="flex items-center text-2xl text-gray-700 hover:text-blue-500 transition duration-200 ease-in-out transform hover:scale-105">
@@ -753,7 +754,26 @@ const Home = () => {
                   d="M9 5l7 7-7 7"
                 ></path>
               </svg>
-              <Link to="/services">Business Solutions</Link>
+              <Link to="/tech"> Technology Solutions</Link>
+              
+            </li>
+
+            <li className="flex items-center text-2xl text-gray-700 hover:text-blue-500 transition duration-200 ease-in-out transform hover:scale-105">
+              <svg
+                className="w-6 h-6 mr-2 text-blue-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <Link to="/talent"> Talent Solutions</Link>
               
             </li>
           </ul>
