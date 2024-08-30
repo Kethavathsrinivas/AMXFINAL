@@ -259,7 +259,7 @@ const CarrerApp = () => {
   return (
     <div className="  relative top-[0px]  ">
       <div
-        className="bg-image h-80  w-full flex items-center justify-center overflow-hidden relative"
+        className="bg-image h-80  w-full flex items-center justify-center  relative"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundPosition: "center",
@@ -271,8 +271,8 @@ const CarrerApp = () => {
           We are Hiring!
         </h1>
       </div>
-      <div className="techback text-black">
-        <div className="container mx-auto py-12 px-4">
+      <div className="techback text-black ">
+        <div className="container5 mx-auto py-12 px-4">
           <h2 className="text-4xl md:text-6xl font-bold mb-8 text-center">
             Careers
           </h2>

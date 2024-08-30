@@ -151,7 +151,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="mainfooter pt-[40px]">
+      <footer className=" mainfooter pt-[40px]">
       {/* <video autoPlay loop muted className="background-video rounded-lg">
             <source src={bgimg} type="video/mp4" />
           </video> */}
