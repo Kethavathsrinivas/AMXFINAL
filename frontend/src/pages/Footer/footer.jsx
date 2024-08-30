@@ -305,7 +305,7 @@ const Footer = () => {
                   </a>
                 </p>
               </div>
-              <div className="submainfooter1 text-justify">
+              <div className="submainfooter1 text-justify sub3">
                 <h1 className="text-white text-justify">AMXSOL KSA Business Development Research Facility</h1>
                 <p className="text-white text-justify">
                   Building# 3248, C16 St, Al Aqrabiyah, Al Khobar 34445, Kingdom
