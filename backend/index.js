@@ -60,6 +60,8 @@ app.post("/submit",async (req, res) => {
     Email : ${email} 
     
     Phone : ${phone}.
+
+    Message : ${message}
     
     Thank you for your time and consideration.
     
