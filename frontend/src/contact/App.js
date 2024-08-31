@@ -99,7 +99,7 @@ function ContactApp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://amxfinal-lzql.vercel.app/submit', {
+      const response = await axios.post('https://amxfinal-lzql-git-main-srinivas-projects-8bd4aa06.vercel.app/submit', {
         formData,
         completed: false
       }).then((res)=>{
