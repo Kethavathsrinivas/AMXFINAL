@@ -54,15 +54,17 @@ app.post("/submit",async (req, res) => {
       text: `
     Dear Sir/Madam,
     
-    My name is ${firstName} ${lastName}, and I would like to discuss the following topics with you:
+    You got a new message from ${lastName} ${firstName} :
     
    
-    Please feel free to contact me at your earliest convenience. You can reach me via email at ${email} or by phone at ${phone}.
+    Email : ${email} 
+    
+    Phone : ${phone}.
     
     Thank you for your time and consideration.
     
     Best regards,
-    ${firstName} ${lastName}
+    ${lastName} ${firstName} 
       `,
   
     
