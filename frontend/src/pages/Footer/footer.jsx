@@ -228,7 +228,7 @@ const Footer = () => {
                   </p>
                 </div>
                 <div>
-                  <h1>AMXSOL USA Global Corporate Headquarters</h1>
+                  <h1 className="text-white">AMXSOL USA Global Corporate Headquarters</h1>
                   <p className="text-white">
                     1000 Northbrook Drive, Suite 100, Trevose PA 19053 USA |
                     <a
@@ -269,7 +269,7 @@ const Footer = () => {
               <div className="rightfooter">
                 <img src={amxsolImage} className="h-[50px] w-[200px]" />
                 <p>
-                  ∞<i>infinite possibilities</i>
+                  <i className="text-white">∞infinite possibilities</i>
                 </p>
               </div>
             </div>
