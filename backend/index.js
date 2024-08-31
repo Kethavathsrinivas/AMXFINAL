@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors({
   origin:["https://amxfinal.vercel.app"],
   methods : ["POST","GET"],
-  credentials:true,
+  // credentials:true,
 }));
 
 // Endpoint to handle form submission
