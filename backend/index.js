@@ -43,8 +43,8 @@ app.post("/submit",async (req, res) => {
   });
   const mailOptions = {
     from: `${firstName} ${lastName}`,
-    // to: "kethavathsrinivas2004@gmail.com",
-    to:"iampavankumar47@gmail.com",
+    to: "kethavathsrinivas2004@gmail.com",
+    // to:"iampavankumar47@gmail.com",
     subject: message,
     text: `Iam ${firstName} ${lastName} i wanted to contact you on these topics ${discussionTopics} on ${preferredDate} so please give me confimation here is my email address:${email} and phone number ${phone}`,
   };
