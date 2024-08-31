@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000; // Use the port you prefer
 app.use(bodyParser.json());
 app.use(cors({
   origin:["https://amxfinal-whrg-git-main-srinivas-projects-8bd4aa06.vercel.app"],
-  methods : ["POST","GET"],
+  methods : ["POST"],
   credentials:true,
 }));
 
