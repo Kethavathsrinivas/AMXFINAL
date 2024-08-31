@@ -3,6 +3,10 @@ import backgroundVideo from "./vdcontact.mp4";
 import image1 from "./image1.jpg";
 import image2 from "./image2.jpg";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from 'axios';
+
 
 function ContactApp() {
   const [formData, setFormData] = useState({
@@ -94,28 +98,19 @@ function ContactApp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await fetch('http://localhost:5000/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          formData,
-          completed: false
-        }),
+      const response = await axios.post('https://amxfinal-lzql.vercel.app/submit', {
+        formData,
+        completed: false
+      }).then((res)=>{
+        console.log(res);
+        toast.success("Thank You!we will get in touch with you");
+
       });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      // Assuming your backend returns some JSON response
-      const responseData = await response.json();
-      console.log('Form submitted successfully:', responseData);
-
-      // Reset the form after successful submission
+    
+      console.log('Response:', response);
+      
+      // Reset form data and field focus
       setFormData({
         firstName: '',
         lastName: '',
@@ -128,7 +123,7 @@ function ContactApp() {
         preferredTime: '',
         declaration: false,
       });
-
+    
       setFieldFocused({
         firstName: false,
         lastName: false,
@@ -140,14 +135,70 @@ function ContactApp() {
         preferredDate: false,
         preferredTime: false,
       });
-
+    
     } catch (error) {
       console.error('Error submitting form:', error);
+      toast.error("Error submitting form. Please try again.");
     }
+    
+
+    // try {
+    //   const response = await fetch('http://localhost:5000/submit', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       formData,
+    //       completed: false
+    //     }),
+    //   });
+    //   console.log("hi");
+    //   if (!response.ok) {
+    //     throw new Error('Network response was not ok');
+    //   }
+
+    
+    //   const responseData = await response.json();
+    //   console.log('Form submitted successfully:', responseData);
+    //   toast.success("Form submitted successfully!");
+      
+    //   setFormData({
+    //     firstName: '',
+    //     lastName: '',
+    //     email: '',
+    //     phone: '',
+    //     message: '',
+    //     discussionTopics: [],
+    //     contactMethods: [],
+    //     preferredDate: '',
+    //     preferredTime: '',
+    //     declaration: false,
+    //   });
+
+    //   setFieldFocused({
+    //     firstName: false,
+    //     lastName: false,
+    //     email: false,
+    //     phone: false,
+    //     message: false,
+    //     discussionTopics: false,
+    //     contactMethods: false,
+    //     preferredDate: false,
+    //     preferredTime: false,
+    //   });
+
+    // } catch (error) {
+    //   console.error('Error submitting form:', error);
+    //   toast.error("Error submitting form. Please try again.");
+    // }
   };
 
   return (
+    <>
+    
     <div className="relative top-0 h-full flex items-center justify-center p-4 ">
+       
       <video
         autoPlay
         loop
@@ -156,11 +207,15 @@ function ContactApp() {
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
+    <ToastContainer position="top-right"/>
+
       <div className="relative flex flex-col md:flex-row items-start justify-center w-full h-full p-8">
+     
         <div className="md:w-1/3 flex flex-col justify-center items-center space-y-4 bg-blue-900 rounded-lg shadow-lg p-4">
           <h2 className="text-4xl font-semibold text-white mb-4">
             Contact here for more info
           </h2>
+          
           <img
             src={image1}
             alt="USA branch"
@@ -170,7 +225,7 @@ function ContactApp() {
           />
           {showAddress && selectedImage === 1 && (
             <p className="text-white mt-4 text-center whitespace-pre-line bg-blue-600 p-2 rounded-lg">
-              {/* <b>America Branch</b> <br /> */}
+            
               American Corporate HQ: <br />
               AMXSOL LLC
               <br />
@@ -321,66 +376,7 @@ function ContactApp() {
                 </div>
               </div>
 
-              {/* <div className="w-full md:w-1/2 px-2 mb-4">
-                <div className="relative">
-                  <label className="block text-m font-medium text-gray-700">
-                    What would you like to discuss?
-                  </label>
-                  {discussionOptions.map((option, index) => (
-                    <div key={index} className="flex items-center mt-2">
-                      <input
-                        type="checkbox"
-                        id={`discussion-${index}`}
-                        name="discussionTopics"
-                        value={option}
-                        checked={formData.discussionTopics.includes(option)}
-                        onChange={handleCheckboxChange}
-                        className={`focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded ${fieldFocused.discussionTopics ||
-                            formData.discussionTopics.includes(option)
-                            ? "bg-indigo-100 text-indigo-900"
-                            : ""
-                          }`}
-                      />
-                      <label
-                        htmlFor={`discussion-${index}`}
-                        className="ml-2 block text-sm text-white"
-                      >
-                        {option}
-                      </label>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
-              {/* <div className="w-full md:w-1/2 px-2 mb-4">
-                <div className="relative">
-                  <label className="block text-m font-medium text-gray-700">
-                    How would you like us to contact you?
-                  </label>
-                  {contactOptions.map((option, index) => (
-                    <div key={index} className="flex items-center mt-2">
-                      <input
-                        type="checkbox"
-                        id={`contact-${index}`}
-                        name="contactMethods"
-                        value={option}
-                        checked={formData.contactMethods.includes(option)}
-                        onChange={handleCheckboxChange}
-                        className={`focus:ring-white h-4 w-4 text-white border-white rounded ${fieldFocused.contactMethods ||
-                            formData.contactMethods.includes(option)
-                            ? "bg-white text-white"
-                            : ""
-                          }`}
-                      />
-                      <label
-                        htmlFor={`contact-${index}`}
-                        className="ml-2 block text-sm text-white"
-                      >
-                        {option}
-                      </label>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
+             
               <div className="w-full md:w-1/2 px-2 mb-4">
                 <div className="relative">
                   <label
@@ -492,7 +488,11 @@ function ContactApp() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
 export default ContactApp;
+
+
+

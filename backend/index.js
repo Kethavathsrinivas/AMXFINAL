@@ -8,10 +8,14 @@ const PORT = process.env.PORT || 5000; // Use the port you prefer
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin:[""],
+  methods : ["POST","GET"],
+  credentials:true,
+}));
 
 // Endpoint to handle form submission
-app.post("/submit", (req, res) => {
+app.post("/submit",async (req, res) => {
   const {
     firstName,
     lastName,
@@ -35,14 +39,24 @@ app.post("/submit", (req, res) => {
   });
   const mailOptions = {
     from: `${firstName} ${lastName}`,
-    to: "kethavathsrinivas2004@gmail.com",
+    // to: "kethavathsrinivas2004@gmail.com",
+    to:"iampavankumar47@gmail.com",
     subject: message,
     text: `Iam ${firstName} ${lastName} i wanted to contact you on these topics ${discussionTopics} on ${preferredDate} so please give me confimation here is my email address:${email} and phone number ${phone}`,
   };
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) console.log(error);
-    else console.log("mail sent");
-  });
+  // transporter.sendMail(mailOptions, (error, info) => {
+  //   if (error) console.log(error);
+  //   else console.log("mail sent");
+  // });
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log("Mail sent successfully");
+    res.status(200).json({ message: "Mail sent successfully" });
+  } catch (error) {
+    console.error("Error sending mail:", error);
+    res.status(500).json({ error: "Error sending mail" });
+  }
+
 });
 
 // Start the server

@@ -231,19 +231,20 @@ const Footer = () => {
                   <h1 className="text-white">AMXSOL USA Global Corporate Headquarters</h1>
                   <p className="text-white">
                     1000 Northbrook Drive, Suite 100, Trevose PA 19053 USA |
+                    <br/>
                     <a
                       href="https://www.linkedin.com/company/amxsol"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white mx-[10px]"
+                      className="text-white mx-[0px]"
                     >
-                      +1​ (215) 268-6168 {"  "} |
+                      +1​ (215)268-6168  |
                     </a>
                     <a
                       href="https://x.com/amxsol?mx=2"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white mx-[10px]"
+                      className="text-white mx-[0px]"
                     >
                       info@amxsol.com |
                     </a>
@@ -273,19 +274,19 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="mainheadfooter1 text-justify">
-              <div className="submainfooter1 text-justify">
+            <div className="mainheadfooter1 ">
+              <div className="submainfooter1">
                 <h1 className="text-white">AMXSOL INDIA Global Research & Delivery Center</h1>
                 <p className="text-white">
                   N Heights, Hitech City, Hyderabad TG 500090 INDIA
-                  
+                  <br/>
                   <a
                     href="https://www.linkedin.com/company/amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white mx-[0px]"
                   >
-                    +91​ 81793 82764 {"  "} |
+                    +91​8179382764  |
                   </a>
                   <a
                     href="https://x.com/amxsol?mx=2"
@@ -299,17 +300,16 @@ const Footer = () => {
                     href="https://www.youtube.com/@amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white mx-[10px]"
+                    className="text-white mx-[0px]"
                   >
                     www.amxsol.com
                   </a>
                 </p>
               </div>
-              <div className="submainfooter1 text-justify sub3">
-                <h1 className="text-white text-justify">AMXSOL KSA Business Development Research Facility</h1>
-                <p className="text-white text-justify">
-                  Building# 3248, C16 St, Al Aqrabiyah, Al Khobar 34445, Kingdom
-                  of SAUDI ARABIA
+              <div className="submainfooter1  sub3">
+                <h1 className="text-white ">AMXSOL KSA Business Development Research Facility</h1>
+                <p className="text-white ">
+                  Building# 3248, C16 St, Al Aqrabiyah, Al Khobar 34445, Kingdom of SAUDI ARABIA
                   
                   <a
                     href="https://www.linkedin.com/company/amxsol"
@@ -317,7 +317,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="text-white mx-[0px]"
                   >
-                    +966 53 298 9548 {"  "} |
+                    +966532989548 {"  "} |
                   </a>
                   <a
                     href="https://x.com/amxsol?mx=2"
@@ -331,7 +331,7 @@ const Footer = () => {
                     href="https://www.youtube.com/@amxsol"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white mx-[10px]"
+                    className="text-white mx-[0px]"
                   >
                     www.amxsol.com
                   </a>
