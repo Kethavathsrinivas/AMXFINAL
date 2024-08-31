@@ -42,11 +42,29 @@ app.post("/submit",async (req, res) => {
     },
   });
   const mailOptions = {
-    from: `${firstName} ${lastName}`,
-    to: "kethavathsrinivas2004@gmail.com",
-    // to:"iampavankumar47@gmail.com",
-    subject: message,
-    text: `Iam ${firstName} ${lastName} i wanted to contact you on these topics ${discussionTopics} on ${preferredDate} so please give me confimation here is my email address:${email} and phone number ${phone}`,
+    // from: `${firstName} ${lastName}`,
+    // to: "kethavathsrinivas2004@gmail.com",
+    // subject: message,
+    // text: `Iam ${firstName} ${lastName} i wanted to contact you on these topics ${discussionTopics} on ${preferredDate} so please give me confimation here is my email address:${email} and phone number ${phone}`,
+    
+      from: `"${firstName} ${lastName}" <${email}>`,  // Includes sender's name and email
+      to: "kethavathsrinivas2004@gmail.com",  // The recipient's email address
+      subject: `Contact Request from ${firstName} ${lastName}`,  // A more descriptive subject line
+      text: `
+    Dear Sir/Madam,
+    
+    My name is ${firstName} ${lastName}, and I would like to discuss the following topics with you:
+    
+   
+    Please feel free to contact me at your earliest convenience. You can reach me via email at ${email} or by phone at ${phone}.
+    
+    Thank you for your time and consideration.
+    
+    Best regards,
+    ${firstName} ${lastName}
+      `,
+  
+    
   };
   // transporter.sendMail(mailOptions, (error, info) => {
   //   if (error) console.log(error);
