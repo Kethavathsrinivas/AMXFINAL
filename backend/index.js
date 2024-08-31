@@ -9,10 +9,14 @@ const PORT = process.env.PORT || 5000; // Use the port you prefer
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-  origin:["https://amxfinal-whrg-git-main-srinivas-projects-8bd4aa06.vercel.app"],
-  methods : ["POST"],
+  origin:["https://amxfinal-whrg.vercel.app"],
+  methods : ["POST","GET"],
   credentials:true,
 }));
+
+app.get("/", (req, res) => {
+  res.send("Hello, your server is running!");
+});
 
 // Endpoint to handle form submission
 app.post("/submit",async (req, res) => {
