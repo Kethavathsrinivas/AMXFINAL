@@ -48,7 +48,8 @@ app.post("/submit",async (req, res) => {
     // text: `Iam ${firstName} ${lastName} i wanted to contact you on these topics ${discussionTopics} on ${preferredDate} so please give me confimation here is my email address:${email} and phone number ${phone}`,
     
       from: `"${firstName} ${lastName}" <${email}>`,  // Includes sender's name and email
-      to: "kethavathsrinivas2004@gmail.com",  // The recipient's email address
+      // to: "kethavathsrinivas2004@gmail.com",
+      to:"iampavankumar47@gmail.com",
       subject: `Contact Request from ${firstName} ${lastName}`,  // A more descriptive subject line
       text: `
     Dear Sir/Madam,
